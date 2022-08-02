@@ -1,0 +1,23 @@
+$body:#191c21;
+$orange: #f49448;
+$purple: #272262;
+$violet: #4038a0;
+$white:#ffff;
+
+
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  font-family: "Nunito", sans-serif;
+}
+
+body{background: $body;
+  overflow-x: hidden;
+
+}
