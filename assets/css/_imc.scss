@@ -45,19 +45,15 @@ main {
     text-align: center;
   }
   label {
-    font: bold 1.3rem serif;
-    font-family: "Nunito", sans-serif;
+    font: bold 1.3rem  "Nunito", sans-serif;
     color: $purple;
   }
 }
- 
-
-
 
 button {
   width: 300px;
   height: 40px;
-  font: bold 1.2rem "Nunito",sans-serif;
+  font: bold 1.2rem "Nunito", sans-serif;
   background: transparent;
   border-color: $orange;
   border-radius: 5px;
@@ -66,11 +62,10 @@ button {
   color: $violet;
   cursor: pointer;
   transition: all 0.3s ease-out;
-  &:hover{
+  &:hover {
     background: $orange;
     color: $white;
   }
-
 }
 
 .result {
@@ -80,11 +75,10 @@ button {
   width: 300px;
   height: 150px;
   border-radius: 5px;
-  font: italic 1.5rem serif;
-  box-shadow: 0px 0px 10px black;
+  font-size: 1.3rem;
+  box-shadow: 0px 0px 10px $body;
   background: $body;
-  color: rgb(255, 198, 0);
+  color: $orange;
   padding: 20px;
-  box-sizing: border-box;
-  user-select: none;
+  text-align: center;
 }
