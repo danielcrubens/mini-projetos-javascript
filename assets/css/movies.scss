@@ -1,0 +1,154 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	border: none;
+	outline: none;
+	font-family: "Kumbh Sans", sans-serif;
+}
+$dark-purple: #17162e;
+$white: #ffffff;
+$text: #acacac;
+@mixin sm {
+	@media (max-width: 575px) {
+		@content;
+	}
+}
+body {
+	background-color: $dark-purple;
+	overflow-x: hidden;
+}
+main {
+	width: 90%;
+	margin: 62px auto;
+}
+.container {
+	@include sm {
+		width: 100%;
+	}
+	width: 70%;
+	margin: 62px auto;
+}
+.d-flex {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.m-auto {
+	margin: 0 auto;
+	display: block;
+}
+.pb{
+	padding-bottom: 48px;
+}
+h1 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 36px;
+	font-weight: 600;
+	line-height: 45px;
+	letter-spacing: 0em;
+	color: $white;
+}
+p {
+	font-size: 18px;
+	color: $white;
+}
+input[type="text"] {
+	@include sm {
+		width: 100%;
+	}
+	margin: 0 auto;
+	display: flex;
+	width: 634px;
+	height: 74px;
+	top: 155px;
+	background: #ffffff38;
+	border-radius: 8px;
+	margin-top: 2rem;
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 22px;
+	padding: 0 12px;
+	color: $text;
+}
+#movie-name {
+	background-image: url(../img/search-icon.svg);
+	background-repeat: no-repeat;
+	background-position: 97% center;
+}
+::-webkit-input-placeholder {
+	color: $text;
+}
+:-ms-input-placeholder {
+	color: $text;
+}
+::placeholder {
+	color: $text;
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 22px;
+	padding: 0 12px;
+}
+.checkbox {
+	gap: 11px;
+	margin-top: 30px;
+	p {
+		color: $white;
+		font-weight: 600;
+	}
+}
+.card {
+	padding: 1.5rem;
+	background: #1d1c3b;
+	box-shadow: 32.8387px 24.5482px 79px rgba(0, 0, 0, 0.15), 23.8851px 17.855px 53.2479px rgba(0, 0, 0, 0.121406);
+	border-radius: 8px;
+	.grid {
+		@include sm {
+			grid-template-columns: repeat(1, 1fr);
+		}
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: 1fr;
+		grid-column-gap: 20px;
+		grid-row-gap: 20px;
+		justify-items: stretch;
+		align-items: stretch;
+		.item {
+			height: auto;
+			display: flex;
+			align-items: center;
+			justify-content: start;
+			h4{
+				color: $white;
+				font-size: 18px;
+			}
+			img {
+				border-radius: 50%;
+			}
+			.content {
+				width: 100%;
+				.details {
+					@include sm {
+						justify-content: center;
+						width: 90%;
+					}
+					display: flex;
+					align-items: center;
+					justify-content: start;
+					width: 50%;
+					margin: 0 auto;
+					padding: 14px 0 0;
+					.gap {
+						width: 100%;
+					}
+					img {
+						border-radius: 0;
+						padding-right: 0.5rem;
+					}
+				}
+			}
+		}
+	}
+}
